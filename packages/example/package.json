@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build",
+    "migrate": "ley up",
+    "migrate:rollback": "ley down"
+  },
+  "dependencies": {
+    "@emotion/is-prop-valid": "^1.1.3",
+    "@mdi/js": "^7.0.96",
+    "@remix-run/node": "deferred",
+    "@remix-run/react": "deferred",
+    "@remix-run/serve": "deferred",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.1",
+    "infused": "*",
+    "infused-remix-node": "*",
+    "isbot": "^3.5.0",
+    "open-props": "^1.4.2",
+    "postgres": "^3.2.4",
+    "prexit": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remix": "deferred",
+    "stream-replace": "^1.0.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "deferred",
+    "@remix-run/eslint-config": "deferred",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "^8.15.0",
+    "ley": "^0.7.1",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "version": "0.0.30"
+}
