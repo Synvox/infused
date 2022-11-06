@@ -1,4 +1,4 @@
-# Infused Stylesheets
+# `infused`
 
 A CSS-in-JS library similar to `styled-components` & others with the following benefits:
 
