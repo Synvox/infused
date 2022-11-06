@@ -1,14 +1,16 @@
 import {
-  _createGlobalStyle as createGlobalStyle,
   GlobalStyle,
+  _createGlobalStyle as createGlobalStyle,
 } from "./createGlobalStyle";
-import { _css as css, CSSFragment } from "./css";
-import { _keyframes as keyframes, CSSKeyframes } from "./keyframes";
-import { _styled as styled, StyledComponent } from "./styled";
+import { CSSFragment, _css as css } from "./css";
+import { CSSKeyframes, _keyframes as keyframes } from "./keyframes";
+import { StyledComponent, _styled as styled } from "./styled";
 import { InfusedStyleSheet } from "./stylesheet";
 export { CSSExtractionProvider, Styles } from "./context";
+export { getExtractor } from "./extractor";
 export { ThemeProvider, useTheme } from "./theme";
 export { InfusedStyleSheet };
+export type { GlobalStyle, CSSFragment, CSSKeyframes, StyledComponent };
 
 export function StyleSheet(prefix?: string) {
   const s = new InfusedStyleSheet(prefix);
@@ -22,5 +24,3 @@ export function StyleSheet(prefix?: string) {
 }
 
 export interface DefaultTheme {}
-
-export type { GlobalStyle, CSSFragment, CSSKeyframes, StyledComponent };

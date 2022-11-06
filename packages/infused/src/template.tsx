@@ -1,8 +1,8 @@
 import { CSSFragment } from "./css";
 import { CSSKeyframes } from "./keyframes";
 import { getHashProcessor, process, Processor } from "./processor";
-import { InfusedStyleSheet, WithInfusedStyleSheet } from "./stylesheet";
 import { StyledMeta } from "./styled";
+import { InfusedStyleSheet, WithInfusedStyleSheet } from "./stylesheet";
 
 export const FUNCTION_TAG = `__FN__`;
 

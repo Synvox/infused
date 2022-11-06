@@ -1,13 +1,11 @@
 import { createContext, ReactNode, useContext } from "react";
 import { InfusedStyleSheet } from "./stylesheet";
 
-const REPLACED_STRING = "🎨_INTERNAL_STYLES_DO_NOT_USE_🎨";
-
 const context = createContext<{
   register(sheet: InfusedStyleSheet): void;
   sheets: Set<InfusedStyleSheet>;
   replacedString: string;
-}>({ register: () => {}, sheets: new Set(), replacedString: REPLACED_STRING });
+}>({ register: () => {}, sheets: new Set(), replacedString: "" });
 
 export function useRegisterInfusedStyleSheet(stylesheet: InfusedStyleSheet) {
   useContext(context).register(stylesheet);
@@ -16,11 +14,11 @@ export function useRegisterInfusedStyleSheet(stylesheet: InfusedStyleSheet) {
 export function CSSExtractionProvider({
   sheets,
   children,
-  replacedString = REPLACED_STRING,
+  replacedString,
 }: {
   sheets: Set<InfusedStyleSheet>;
   children: ReactNode;
-  replacedString?: string;
+  replacedString: string;
 }) {
   function register(sheet: InfusedStyleSheet) {
     sheets.add(sheet);

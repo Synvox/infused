@@ -1,5 +1,5 @@
+import { ThemeProp, ValidInterpolation } from "./styled";
 import { InfusedStyleSheet } from "./stylesheet";
-import { ThemeProp, ValidInterpolation, StyledComponent } from "./styled";
 import { parseTemplateString } from "./template";
 
 export class CSSFragment<P> {

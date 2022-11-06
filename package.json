@@ -1,8 +1,6 @@
 {
   "name": "workspace",
   "workspaces": [
-    "./packages/infused",
-    "./packages/infused-remix-node",
-    "./packages/example"
+    "./packages/infused"
   ]
 }

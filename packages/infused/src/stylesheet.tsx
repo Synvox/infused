@@ -1,6 +1,6 @@
 import { useInsertionEffect } from "react";
-import { getHashProcessor, process } from "./processor";
 import { useRegisterInfusedStyleSheet } from "./context";
+import { getHashProcessor, process } from "./processor";
 
 type Entry = { id: string; css: string };
 
