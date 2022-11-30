@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`adds 1 + 2 to equal 3 1`] = `".i698f458c944cbfdb{background-color: blue;}"`;
+
+exports[`compile function interpolations 1`] = `".ibb4b2b09abc56981{background-color: var(--ibb4b2b09abc56981-0);}"`;
+
+exports[`compiles css interpolations 1`] = `".if0d56cc259a2964a{margin: auto;background-color: var(--if0d56cc259a2964a-0);}"`;
+
+exports[`compiles function interpolations 1`] = `".ibb4b2b09abc56981{background-color: var(--ibb4b2b09abc56981-0);}"`;
+
+exports[`compiles global styles 1`] = `"body{margin: 0;}"`;
+
+exports[`compiles interpolations 1`] = `".i698f458c944cbfdb{background-color: blue;}"`;
+
+exports[`compiles keyframes interpolations 1`] = `
+"@keyframes i9e23bee7ec1724d2{ 0% { color:black; } 100% { color:white; } }
+.ia426940a7b5a2b3c{animation: 1s i9e23bee7ec1724d2;}"
+`;
+
+exports[`compiles nested rules 1`] = `
+".ie140a6064e781688{color: black;}
+.ie140a6064e781688:hover{color: white;}
+.ie140a6064e781688:hover a{text-decoration: dashed;}
+@media (max-width: 500px){.ie140a6064e781688:hover a{display: block;}}"
+`;
+
+exports[`compiles simple tags 1`] = `".i698f458c944cbfdb{background-color: blue;}"`;

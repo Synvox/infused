@@ -20,6 +20,10 @@ export function StyleSheet(prefix?: string) {
     createGlobalStyle: createGlobalStyle(s),
     keyframes: keyframes(s),
     css: css(s),
+    toString() {
+      s.compile();
+      return s.css;
+    },
   };
 }
 
